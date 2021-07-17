@@ -22,6 +22,8 @@ describe("The divideByThree function.", () =>{
     test("takes a number as an argument and decides if the number is evenly divisble by three or not.", () =>{
         // We can declare test data as variables inside of the test() as below:
         // let ~~ var 
+        // Review: var and let are both used for variable declaration in javascript 
+        // but the difference between them is that var is function scoped and let is block scoped.
         var num1 = 15 // Expected output: "15 is divisible by three"
         var num2 = 0 // Expected output: "0 is divisible by three"
         var num3 = -7 // Expected output: "-7 is not divisible by three"
@@ -68,7 +70,7 @@ describe("The capitalizer function.", () =>{
 
 // b) Create the function that makes the test pass.
 const capitalizer = (arr) =>{
-    //.map is very useful high-order function, it saves lot of time to loop through array.
+    //.map() is very useful high-order function, it saves lot of time to loop through array.
     //.map(value, index, array)
     let eachItem = arr.map(value =>{
         return value[0].toUpperCase() + value.substring(1)
